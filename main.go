@@ -12,6 +12,7 @@ import (
 const SIZE = 212
 const CELLCHAR = 'O'
 const FPS = 3000
+const FILENAME = "field.in"
 
 var temp image.Rectangle
 var CLEARBUF = ui.NewBuffer(temp)
@@ -25,7 +26,7 @@ func main() {
 	defer ui.Close()
 
 	var field FieldT
-	field.read("field.in")
+	field.read(FILENAME)
 
 	window := ui.NewCanvas()
 	window.SetRect(0, 0, SIZE, SIZE)

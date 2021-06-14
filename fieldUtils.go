@@ -51,10 +51,7 @@ func (field *FieldT) createMap(c *ui.Canvas) {
 	printOne := func(field *FieldT, x, y int) {
 		if field[y][x] {
 			c.SetPoint(image.Pt(x, y), ui.ColorWhite)
-		} // else {
-		// log.Print(x, y)
-		//c.SetPoint(image.Pt(11, 11), ui.ColorRed)
-		//}
+		}
 	}
 	field.iterateField(printOne)
 }
