@@ -10,7 +10,7 @@ import (
 )
 
 const SIZE = 212
-const CELLCHAR = 'O'
+const CELLCHAR = '#'
 const FPS = 3000
 const FILENAME = "field.in"
 
